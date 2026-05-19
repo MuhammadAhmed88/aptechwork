@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object of Array</h1>
+
+    <script>
+        var objOfArrays = {
+            "semesters" : ["CPISM", "DISM", "HDSE-I", "HDSE-II", "ADSE-I"],
+            "LABS" : ["lab1", "lab2", "lab3"]
+        }
+
+        for(var outer in objOfArrays){
+            document.write(outer + " : " + "<br>");
+            for(var inner in objOfArrays[outer]){
+                document.write(objOfArrays[outer][inner] + "<br>");
+            }
+        }
+    </script>
+</body>
+</html>
