@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON (javascript Object Notation)</h1>
+
+    <script>
+        var a = {
+            "name" : "Ali",
+            "age": 22,
+            "height" : "5.9",
+            "city" : "karachi",
+            "CNIC" : true
+            
+        }
+
+        console.log(a);
+        // document.write(a["age"]);
+        console.log(a.city);
+        console.log(a["city"]);
+
+        // a.contact = "0310 -4576564";
+        a["contact"] = "0310 -4576564";
+
+        console.log(a["contact"]);
+
+        for(var key in a){
+            document.write(key + ":  " +a [key] + "<br>")
+        }
+    </script>
+</body>
+</html>
